@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { CarFront } from "lucide-react";
+
+const LOGO_URL = "https://customer-assets-rejwkqb3.emergentagent.net/job_auto-reserve-64/artifacts/k74x985u_project_20260720_1023503-01.png";
 
 export default function Login() {
   const handleLogin = () => {
@@ -15,10 +16,8 @@ export default function Login() {
       <Navbar />
       <div className="max-w-md mx-auto px-6 pt-32 pb-16">
         <div className="border border-white/10 p-8 bg-card">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-10 h-10 rounded-md bg-primary flex items-center justify-center">
-              <CarFront className="w-5 h-5 text-white" />
-            </div>
+          <div className="flex items-center gap-3 mb-6">
+            <img src={LOGO_URL} alt="Arya Travels" className="h-12 w-12 object-contain" />
             <span className="font-display font-black tracking-tighter">Welcome back</span>
           </div>
           <h1 className="font-display font-black text-3xl tracking-tighter">Sign in to continue.</h1>
@@ -28,7 +27,7 @@ export default function Login() {
           <Button
             onClick={handleLogin}
             data-testid="google-signin-btn"
-            className="w-full h-12 mt-8 rounded-full bg-white text-black hover:bg-white/90 lift font-semibold"
+            className="w-full h-12 mt-8 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 lift font-semibold"
           >
             Continue with Google
           </Button>

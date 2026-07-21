@@ -97,7 +97,7 @@ export default function CheckoutPage() {
               onClick={pay}
               disabled={redirecting}
               data-testid="pay-now-btn"
-              className="w-full h-12 rounded-full bg-primary hover:bg-primary/90 text-white font-semibold lift"
+              className="w-full h-12 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold lift"
             >
               <CreditCard className="w-4 h-4 mr-2" />
               {redirecting ? "Redirecting to Stripe..." : `Pay ${INR(booking.total_amount)}`}

@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import { CarFront, Mail, Phone, MapPin, Instagram, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Twitter, Facebook } from "lucide-react";
+
+const LOGO_URL = "https://customer-assets-rejwkqb3.emergentagent.net/job_auto-reserve-64/artifacts/k74x985u_project_20260720_1023503-01.png";
 
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 mt-24 bg-black">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-10">
         <div className="col-span-2">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
-              <CarFront className="w-4 h-4 text-white" />
-            </div>
+          <div className="flex items-center gap-3 mb-4">
+            <img src={LOGO_URL} alt="Arya Travels" className="h-12 w-12 object-contain" />
             <span className="font-display font-black text-lg tracking-tighter">
               ARYA <span className="text-primary">TRAVELS</span>
             </span>

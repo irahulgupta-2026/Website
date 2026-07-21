@@ -9,7 +9,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { CarFront, LogOut, User as UserIcon, LayoutDashboard, ShieldCheck } from "lucide-react";
+import { LogOut, User as UserIcon, LayoutDashboard, ShieldCheck } from "lucide-react";
+
+const LOGO_URL = "https://customer-assets-rejwkqb3.emergentagent.net/job_auto-reserve-64/artifacts/k74x985u_project_20260720_1023503-01.png";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -24,11 +26,9 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" data-testid="brand-logo" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
-            <CarFront className="w-4 h-4 text-white" />
-          </div>
-          <span className="font-display font-black text-lg tracking-tighter">
+        <Link to="/" data-testid="brand-logo" className="flex items-center gap-3 group">
+          <img src={LOGO_URL} alt="Arya Travels" className="h-10 w-10 object-contain" />
+          <span className="font-display font-black text-lg tracking-tighter hidden sm:inline">
             ARYA <span className="text-primary">TRAVELS</span>
           </span>
         </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
             <Button
               onClick={handleLogin}
               data-testid="login-btn"
-              className="rounded-full bg-white text-black hover:bg-white/90 lift"
+              className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 lift"
               size="sm"
             >
               Sign In

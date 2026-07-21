@@ -86,7 +86,7 @@ export default function SearchWidget({ inline = false }) {
           <Button
             type="submit"
             data-testid="search-submit"
-            className="w-full h-11 bg-primary hover:bg-primary/90 text-white lift font-semibold"
+            className="w-full h-11 bg-primary hover:bg-primary/90 text-primary-foreground lift font-semibold"
           >
             <Search className="w-4 h-4 mr-2" /> Search Cars
           </Button>

@@ -274,7 +274,7 @@ export default function Landing() {
               type="submit"
               disabled={submitting}
               data-testid="lead-submit"
-              className="w-full mt-6 h-12 rounded-full bg-primary hover:bg-primary/90 text-white lift font-semibold"
+              className="w-full mt-6 h-12 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground lift font-semibold"
             >
               {submitting ? "Sending..." : "Get a callback"}
             </Button>

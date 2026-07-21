@@ -38,21 +38,21 @@ h1, h2, h3, h4, h5, h6, .font-display {
         --card-foreground: 0 0% 100%;
         --popover: 0 0% 6%;
         --popover-foreground: 0 0% 100%;
-        --primary: 210 100% 50%;
-        --primary-foreground: 0 0% 100%;
+        --primary: 50 100% 55%;
+        --primary-foreground: 0 0% 0%;
         --secondary: 0 0% 12%;
         --secondary-foreground: 0 0% 100%;
         --muted: 0 0% 12%;
         --muted-foreground: 0 0% 65%;
-        --accent: 210 100% 50%;
-        --accent-foreground: 0 0% 100%;
+        --accent: 50 100% 55%;
+        --accent-foreground: 0 0% 0%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 100%;
         --border: 0 0% 15%;
         --input: 0 0% 15%;
-        --ring: 210 100% 50%;
+        --ring: 50 100% 55%;
         --radius: 0.75rem;
-        --chart-1: 210 100% 50%;
+        --chart-1: 50 100% 55%;
         --chart-2: 173 58% 55%;
         --chart-3: 43 74% 66%;
         --chart-4: 27 87% 67%;
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 @layer base {
     * { @apply border-border; }
     body { @apply bg-background text-foreground; }
-    ::selection { background: hsl(210 100% 50%); color: white; }
+    ::selection { background: hsl(50 100% 55%); color: black; }
 }
 
 /* Noise overlay */

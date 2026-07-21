@@ -103,7 +103,7 @@ export default function CarDetail() {
               <Button
                 onClick={() => navigate(`/book/${car.id}`)}
                 data-testid="book-now-btn"
-                className="w-full h-12 rounded-full bg-primary hover:bg-primary/90 text-white lift font-semibold"
+                className="w-full h-12 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground lift font-semibold"
               >
                 Book this car
               </Button>
@@ -124,7 +124,7 @@ export default function CarDetail() {
         <Button
           onClick={() => navigate(`/book/${car.id}`)}
           data-testid="sticky-book-btn"
-          className="rounded-full bg-primary hover:bg-primary/90 text-white h-11 px-6 font-semibold"
+          className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground h-11 px-6 font-semibold"
         >
           Book now
         </Button>

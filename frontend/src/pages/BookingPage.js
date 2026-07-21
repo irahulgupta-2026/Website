@@ -152,7 +152,7 @@ export default function BookingPage() {
               type="submit"
               disabled={submitting}
               data-testid="proceed-checkout"
-              className="w-full h-12 rounded-full bg-primary hover:bg-primary/90 text-white font-semibold lift"
+              className="w-full h-12 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold lift"
             >
               {submitting ? "Creating booking..." : "Proceed to Checkout →"}
             </Button>
