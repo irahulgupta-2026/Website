@@ -1,0 +1,119 @@
+{
+  "theme": "Archetype 2: The Performance Pro",
+  "theme_strategy": "Dark Mode First. Obsidian (#0A0A0A) as the primary anchor. Pure White (#FFFFFF) for data clarity. Volt Blue (#007AFF) as the kinetic trigger. Use 'Tactical Minimalism' with 1px solid strokes instead of soft shadows.",
+  "typography": {
+    "headings": "Outfit",
+    "body": "IBM Plex Sans",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "body": "text-base leading-relaxed"
+    },
+    "rules": "Never use Inter for headings. Use tracking-[0.2em] uppercase for overlines/labels."
+  },
+  "colors": {
+    "background": "0 0% 4%",
+    "foreground": "0 0% 100%",
+    "card": "0 0% 8%",
+    "card_foreground": "0 0% 100%",
+    "popover": "0 0% 6%",
+    "popover_foreground": "0 0% 100%",
+    "primary": "210 100% 50%",
+    "primary_foreground": "0 0% 100%",
+    "secondary": "0 0% 12%",
+    "secondary_foreground": "0 0% 100%",
+    "muted": "0 0% 12%",
+    "muted_foreground": "0 0% 65%",
+    "accent": "210 100% 50%",
+    "accent_foreground": "0 0% 100%",
+    "destructive": "0 84.2% 60.2%",
+    "border": "0 0% 15%",
+    "input": "0 0% 15%",
+    "ring": "210 100% 50%"
+  },
+  "visual_enhancers": {
+    "surfaces": "Use 'Crystal Glass' (backdrop-blur-xl bg-black/60 border border-white/10) for sticky headers and booking widgets. Use 'Grid Borders' (border-collapse, border-border/40) for dense dashboard layouts.",
+    "decorations": "Subtle noise overlay on marketing hero sections. NO generic full-screen gradients."
+  },
+  "grids": {
+    "marketing": "Mode A (Tetris Grid). Asymmetrical wide gaps (gap-8 to gap-12). Never fill 100% perfectly, leave breathing room.",
+    "dashboard": "Mode B (High Density Grid). Tight gap-4 or gap-6. Every pixel utilized, h-full on children. Cardless sharp edges."
+  },
+  "layouts": {
+    "hero": "Hero image MUST have a bg-black/40 overlay to ensure text contrast. Search widget floats above.",
+    "car_listing": "Progressive disclosure for filters. All-in pricing visible immediately. Sticky booking bar at the bottom for mobile.",
+    "booking_flow": "Max 3-4 screen frictionless flow. Guest checkout capabilities."
+  },
+  "motion": {
+    "interactions": "Hover states must explicitly set text color (e.g., hover:text-white). Buttons lift slightly (-translate-y-1).",
+    "transitions": "Use specific properties (transition: transform 0.2s ease, opacity 0.2s ease). NO transition: all.",
+    "feedback": "Use skeleton screens over blank spinners for loading states."
+  },
+  "accessibility": {
+    "contrast": "Minimum 4.5:1 for normal text. Ensure clear focus states (focus:ring-2).",
+    "testing": "All interactive elements MUST include 'data-testid' attribute in kebab-case."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1758223725140-3855ec687a16?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBzdXYlMjBkcml2aW5nJTIwY2l0eXxlbnwwfHx8fDE3ODQ2NDcyODh8MA&ixlib=rb-4.1.0&q=85",
+        "category": "Hero / Main Header",
+        "description": "Black Lincoln Navigator driving in the city. Layer with bg-black/40 overlay."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1616549972169-0a0d961c9905?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxzbGVlayUyMHNlZGFuJTIwZHJpdmluZyUyMGhpZ2h3YXl8ZW58MHx8fHwxNzg0NjQ3Mjg4fDA&ixlib=rb-4.1.0&q=85",
+        "category": "Car Browse / Sedan Category",
+        "description": "Sleek black Audi sedan."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1759177628407-ce741877ef10?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsdXh1cnklMjBzdXYlMjBkcml2aW5nJTIwY2l0eXxlbnwwfHx8fDE3ODQ2NDcyODh8MA&ixlib=rb-4.1.0&q=85",
+        "category": "Car Browse / SUV Category",
+        "description": "Silver luxury SUV on city street."
+      },
+      {
+        "url": "https://images.pexels.com/photos/7235564/pexels-photo-7235564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "Marketing / Testimonials",
+        "description": "Smiling couple enjoying a road trip in a car, showing trust and lifestyle."
+      }
+    ],
+    "rules": "Mobile height limit: max-h-[80vh]. Never use generic placeholders."
+  },
+  "3d_libraries": {
+    "usage": "Use framer-motion for micro-interactions and page transitions. Complex WebGL/3D is not required unless rendering an interactive 3D car viewer."
+  },
+  "component_path": "/app/frontend/src/components/ui",
+  "instructions_to_main_agent": [
+    "Update index.css with the exact HSL color variables provided in the design guidelines. Set the app default to Dark Mode.",
+    "Remove default App.css text-align: center rules. Always left-align structured content.",
+    "Integrate Lucide-react or Phosphor icons. Do not use emojis for icons.",
+    "Implement the 'Sticky Booking Bar' pattern for mobile: a bottom-fixed bar with Price and Book Now button.",
+    "For the Admin Dashboard, use purely functional, highly dense layouts with visible grid lines (border-collapse equivalent) and no soft shadows.",
+    "Use sonner for toasts. The component should be implemented in .js files (e.g., sonner.js), NOT .tsx.",
+    "Every button, link, and form input MUST have a data-testid.",
+    "Make sure forms use customized Shadcn components instead of native inputs."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like \ud83e\udd16\ud83e\udde0\ud83d\udcad\ud83d\udca1\ud83d\udd2e\ud83c\udfaf etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Create new components that match the style and conventions of existing components when needed.",
+    "Examine existing components to understand the project's component patterns before creating new ones.",
+    "Use sonner for toasts. Sonner component are located in /app/frontend/src/components/ui/sonner.js"
+  ],
+  "GENERAL UI UX DESIGN GUIDELINES": [
+    "Ensure minimum 4.5:1 contrast ratio for all text elements.",
+    "Use optical alignment for elements with icons.",
+    "Do not use 100% transparent backgrounds for sticky headers; always apply a blur and semi-transparent background."
+  ]
+}
