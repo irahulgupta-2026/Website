@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 
-const CITIES = ["Asansol"];
+const CITIES = ["Asansol", "Raniganj", "Durgapur", "Jamuria", "Kulti", "Barakar"];
 
 function nowRounded(offsetHours = 2) {
   const d = new Date(Date.now() + offsetHours * 3600 * 1000);

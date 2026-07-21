@@ -95,7 +95,7 @@ export default function CarDetail() {
             <div className="mt-6 space-y-2 text-sm">
               <div className="flex items-center gap-2 text-white/80"><Check className="w-4 h-4 text-primary" /> Fully insured</div>
               <div className="flex items-center gap-2 text-white/80"><Check className="w-4 h-4 text-primary" /> Unlimited kilometres</div>
-              <div className="flex items-center gap-2 text-white/80"><Check className="w-4 h-4 text-primary" /> Free doorstep delivery</div>
+              <div className="flex items-center gap-2 text-white/80"><Check className="w-4 h-4 text-primary" /> Free doorstep pickup</div>
               <div className="flex items-center gap-2 text-white/80"><Check className="w-4 h-4 text-primary" /> 24×7 roadside assist</div>
             </div>
 

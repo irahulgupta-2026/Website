@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { AuthProvider, useAuth } from "@/context/AuthContext";
 import { Toaster } from "sonner";
 import { api } from "@/lib/api";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 import Landing from "@/pages/Landing";
 import CarsList from "@/pages/CarsList";
@@ -81,6 +82,7 @@ function App() {
       <BrowserRouter>
         <AuthProvider>
           <AppRouter />
+          <WhatsAppButton />
           <Toaster theme="dark" position="top-right" richColors />
         </AuthProvider>
       </BrowserRouter>

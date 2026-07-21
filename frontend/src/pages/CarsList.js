@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 
-const CITIES = ["All", "Asansol"];
+const CITIES = ["All", "Asansol", "Raniganj", "Durgapur", "Jamuria", "Kulti", "Barakar"];
 const CATEGORIES = ["all", "hatchback", "sedan", "suv", "muv", "luxury"];
 const TRANS = ["all", "manual", "automatic"];
 const FUELS = ["all", "petrol", "diesel", "electric", "hybrid"];

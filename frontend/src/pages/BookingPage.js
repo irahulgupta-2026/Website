@@ -16,7 +16,7 @@ import {
 import { useAuth } from "@/context/AuthContext";
 import { CarFront, Calendar, MapPin, Clock, User } from "lucide-react";
 
-const CITIES = ["Asansol"];
+const CITIES = ["Asansol", "Raniganj", "Durgapur", "Jamuria", "Kulti", "Barakar"];
 
 function isoLocal(d) {
   return d.toISOString().slice(0, 16);
@@ -129,7 +129,7 @@ export default function BookingPage() {
                 </div>
                 <div>
                   <label className="text-sm text-muted-foreground block mb-1.5">Location / Address</label>
-                  <Input data-testid="booking-location" value={form.pickup_location} onChange={(e) => setForm({ ...form, pickup_location: e.target.value })} placeholder="Doorstep delivery available" />
+                  <Input data-testid="booking-location" value={form.pickup_location} onChange={(e) => setForm({ ...form, pickup_location: e.target.value })} placeholder="Doorstep pickup available" />
                 </div>
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function BookingPage() {
             </div>
 
             <p className="text-[11px] text-muted-foreground mt-4 leading-relaxed">
-              All-inclusive: insurance, unlimited km, doorstep delivery. Refundable deposit collected at handover.
+              All-inclusive: insurance, unlimited km, doorstep pickup. Refundable deposit collected at handover.
             </p>
           </aside>
         </div>

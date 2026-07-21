@@ -15,8 +15,8 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-muted-foreground text-sm max-w-md leading-relaxed">
-            Modern self-drive & chauffeur car rentals by Arya Travels — proudly serving
-            Asansol and nearby districts. Zero paperwork, transparent pricing, doorstep delivery.
+            Comfortable chauffeur-driven car rentals by Arya Travels — proudly serving
+            Asansol and nearby towns. Zero paperwork, transparent pricing, doorstep pickup.
           </p>
           <div className="flex items-center gap-3 mt-6">
             <a href="#" data-testid="social-ig" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 lift"><Instagram className="w-4 h-4" /></a>

@@ -36,7 +36,7 @@ const HOW_STEPS = [
   { icon: MapPin, title: "Pick location & dates", body: "Choose your pickup point in Asansol, set your dates and times." },
   { icon: KeyRound, title: "Select your ride", body: "From nimble hatchbacks to spacious MUVs — pick what fits." },
   { icon: Wallet, title: "Confirm & pay", body: "Secure checkout via Stripe. Instant confirmation." },
-  { icon: Sparkles, title: "Drive away", body: "Doorstep delivery. Zero paperwork. Total freedom." },
+  { icon: Sparkles, title: "Ride comfortably", body: "Doorstep pickup. Zero paperwork. Total peace of mind." },
 ];
 
 const WHY = [
@@ -48,8 +48,8 @@ const WHY = [
 
 const TESTIMONIALS = [
   { name: "Aarav S.", city: "Asansol", stars: 5, body: "Booked an Ertiga for a family trip to Durgapur. Pickup was on time and the car was spotless. Will book again." },
-  { name: "Priya M.", city: "Asansol", stars: 5, body: "The self-drive Swift made our weekend to Ranchi perfect. Insurance clarity was a big plus." },
-  { name: "Rohit K.", city: "Asansol", stars: 5, body: "As a startup founder, I use Arya Travels weekly. Instant checkout, doorstep delivery, no fuss." },
+  { name: "Priya M.", city: "Asansol", stars: 5, body: "The Swift made our weekend to Ranchi perfect. Insurance clarity was a big plus." },
+  { name: "Rohit K.", city: "Asansol", stars: 5, body: "As a startup founder, I use Arya Travels weekly. Instant checkout, doorstep pickup, no fuss." },
 ];
 
 const FAQS = [
@@ -111,7 +111,7 @@ export default function Landing() {
           <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center pt-10">
             <div className="max-w-3xl">
               <p className="overline text-primary mb-5" data-testid="hero-eyebrow">
-                Self-drive · Chauffeur · Monthly subscriptions
+                Chauffeur · Outstation · Monthly subscriptions
               </p>
               <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-tighter">
                 Drive on
@@ -119,8 +119,8 @@ export default function Landing() {
                 <span className="text-primary">your terms.</span>
               </h1>
               <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-                Premium self-drive rentals in Asansol. Book in 60 seconds. Doorstep
-                delivery. Zero paperwork.
+                Premium comfortable rentals in Asansol. Book in 60 seconds. Doorstep
+                pickup. Zero paperwork.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link to="/cars">
@@ -187,7 +187,7 @@ export default function Landing() {
           <div>
             <p className="overline text-muted-foreground">Why Arya Travels</p>
             <h2 className="font-display font-black text-4xl sm:text-5xl tracking-tighter mt-2">
-              Built for people who <span className="text-primary">actually drive.</span>
+              Built for people who <span className="text-primary">want comfort.</span>
             </h2>
             <p className="text-muted-foreground mt-6 leading-relaxed">
               We built Arya Travels because renting a car in India shouldn't feel like a bank loan.
@@ -239,7 +239,7 @@ export default function Landing() {
             <div className="absolute -inset-3 border border-primary/40 -z-10" />
             <img
               src={FOUNDER_IMG}
-              alt="Ajit Arya — Founder, Arya Travels"
+              alt="Ajit Singh — Founder, Arya Travels"
               className="w-full aspect-[4/3] object-cover border border-white/10"
               data-testid="founder-image"
             />
@@ -248,7 +248,7 @@ export default function Landing() {
             <p className="overline text-primary">Meet the founder</p>
             <h2 className="font-display font-black text-4xl sm:text-5xl tracking-tighter mt-3">
               Built from the driver's seat,<br />
-              <span className="text-primary">by Ajit Arya.</span>
+              <span className="text-primary">by Ajit Singh.</span>
             </h2>
             <p className="text-muted-foreground mt-6 leading-relaxed">
               Arya Travels started with two Maruti Ertigas and one promise — a rental
@@ -263,7 +263,7 @@ export default function Landing() {
             <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">
               <div>
                 <p className="overline text-muted-foreground">Founder</p>
-                <p className="font-display font-bold text-lg mt-1">Ajit Arya</p>
+                <p className="font-display font-bold text-lg mt-1">Ajit Singh</p>
               </div>
               <div>
                 <p className="overline text-muted-foreground">Based in</p>
