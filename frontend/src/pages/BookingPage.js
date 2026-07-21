@@ -16,7 +16,7 @@ import {
 import { useAuth } from "@/context/AuthContext";
 import { CarFront, Calendar, MapPin, Clock, User } from "lucide-react";
 
-const CITIES = ["Delhi", "Mumbai", "Bangalore"];
+const CITIES = ["Asansol"];
 
 function isoLocal(d) {
   return d.toISOString().slice(0, 16);
@@ -31,7 +31,7 @@ export default function BookingPage() {
     customer_name: "",
     customer_email: "",
     customer_phone: "",
-    pickup_city: "Delhi",
+    pickup_city: "Asansol",
     pickup_location: "",
     pickup_datetime: isoLocal(new Date(Date.now() + 2 * 3600 * 1000)),
     drop_datetime: isoLocal(new Date(Date.now() + 26 * 3600 * 1000)),

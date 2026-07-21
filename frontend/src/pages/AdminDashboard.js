@@ -19,7 +19,7 @@ import { LogOut, Plus, Pencil, Trash2, ShieldCheck, Car, Users, MessageSquare, W
 const emptyCar = {
   name: "", brand: "", category: "sedan", transmission: "automatic", fuel: "petrol",
   seats: 5, price_per_day: 1999, price_per_hour: 199, image_url: "", features: [],
-  cities: ["Delhi", "Mumbai", "Bangalore"], description: "", active: true,
+  cities: ["Asansol"], description: "", active: true,
 };
 
 function StatCard({ icon: Icon, label, value }) {
@@ -35,7 +35,7 @@ function StatCard({ icon: Icon, label, value }) {
 }
 
 function CarForm({ initial, onSave, onClose }) {
-  const [c, setC] = useState({ ...emptyCar, ...(initial || {}), features: (initial?.features || []).join(", "), cities: (initial?.cities || ["Delhi", "Mumbai", "Bangalore"]).join(", ") });
+  const [c, setC] = useState({ ...emptyCar, ...(initial || {}), features: (initial?.features || []).join(", "), cities: (initial?.cities || ["Asansol"]).join(", ") });
   const set = (k, v) => setC((p) => ({ ...p, [k]: v }));
 
   const save = async (e) => {

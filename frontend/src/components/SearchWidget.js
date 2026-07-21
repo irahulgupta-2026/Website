@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 
-const CITIES = ["Delhi", "Mumbai", "Bangalore"];
+const CITIES = ["Asansol"];
 
 function nowRounded(offsetHours = 2) {
   const d = new Date(Date.now() + offsetHours * 3600 * 1000);
@@ -21,7 +21,7 @@ function nowRounded(offsetHours = 2) {
 
 export default function SearchWidget({ inline = false }) {
   const navigate = useNavigate();
-  const [city, setCity] = useState("Delhi");
+  const [city, setCity] = useState("Asansol");
   const [pickup, setPickup] = useState(nowRounded(2));
   const [drop, setDrop] = useState(nowRounded(26));
 

@@ -59,7 +59,7 @@ class Car(BaseModel):
     price_per_hour: float
     image_url: str
     features: List[str] = []
-    cities: List[str] = ["Delhi", "Mumbai", "Bangalore"]
+    cities: List[str] = ["Asansol"]
     description: str = ""
     active: bool = True
     created_at: str = Field(default_factory=now_iso)
@@ -76,7 +76,7 @@ class CarCreate(BaseModel):
     price_per_hour: float
     image_url: str
     features: List[str] = []
-    cities: List[str] = ["Delhi", "Mumbai", "Bangalore"]
+    cities: List[str] = ["Asansol"]
     description: str = ""
     active: bool = True
 

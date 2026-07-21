@@ -26,12 +26,15 @@ import {
   MapPin,
 } from "lucide-react";
 
-const HERO_IMG =
+const HERO_VIDEO_MP4 = "/hero.mp4";
+const HERO_POSTER =
   "https://images.unsplash.com/photo-1758223725140-3855ec687a16?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBzdXYlMjBkcml2aW5nJTIwY2l0eXxlbnwwfHx8fDE3ODQ2NDcyODh8MA&ixlib=rb-4.1.0&q=85";
+const FOUNDER_IMG =
+  "https://customer-assets-rejwkqb3.emergentagent.net/job_auto-reserve-64/artifacts/daown7ln_file_00000000c88c8207b012e18eda2bbe9b.png";
 
 const HOW_STEPS = [
-  { icon: MapPin, title: "Pick location & dates", body: "Choose from 3 cities, set your pickup and drop times." },
-  { icon: KeyRound, title: "Select your ride", body: "From nimble hatchbacks to luxury sedans — pick what fits." },
+  { icon: MapPin, title: "Pick location & dates", body: "Choose your pickup point in Asansol, set your dates and times." },
+  { icon: KeyRound, title: "Select your ride", body: "From nimble hatchbacks to spacious MUVs — pick what fits." },
   { icon: Wallet, title: "Confirm & pay", body: "Secure checkout via Stripe. Instant confirmation." },
   { icon: Sparkles, title: "Drive away", body: "Doorstep delivery. Zero paperwork. Total freedom." },
 ];
@@ -44,9 +47,9 @@ const WHY = [
 ];
 
 const TESTIMONIALS = [
-  { name: "Aarav S.", city: "Delhi", stars: 5, body: "Booked a Creta for a Rajasthan road trip. Pickup was on time and the car was spotless. Will book again." },
-  { name: "Priya M.", city: "Mumbai", stars: 5, body: "The self-drive Fortuner made our Lonavala weekend perfect. Insurance clarity was a big plus." },
-  { name: "Rohit K.", city: "Bangalore", stars: 5, body: "As a startup founder, I use Arya Travels weekly. Instant checkout, doorstep delivery, no fuss." },
+  { name: "Aarav S.", city: "Asansol", stars: 5, body: "Booked an Ertiga for a family trip to Durgapur. Pickup was on time and the car was spotless. Will book again." },
+  { name: "Priya M.", city: "Asansol", stars: 5, body: "The self-drive Swift made our weekend to Ranchi perfect. Insurance clarity was a big plus." },
+  { name: "Rohit K.", city: "Asansol", stars: 5, body: "As a startup founder, I use Arya Travels weekly. Instant checkout, doorstep delivery, no fuss." },
 ];
 
 const FAQS = [
@@ -54,7 +57,7 @@ const FAQS = [
   { q: "Is fuel included?", a: "No. You start and return the car with the same fuel level. All wear-and-tear is on us." },
   { q: "Can I extend my booking?", a: "Absolutely — extend from the app up to 2 hours before drop. Subject to availability." },
   { q: "Is there a security deposit?", a: "A refundable deposit of ₹3,000–₹10,000 depending on the car, refunded within 48 hours of return." },
-  { q: "Which cities are you available in?", a: "Delhi, Mumbai and Bangalore — with more cities launching soon." },
+  { q: "Where are you located?", a: "We're based in Asansol, West Bengal, and serve all nearby towns — Durgapur, Raniganj, Jamuria and beyond." },
 ];
 
 export default function Landing() {
@@ -91,8 +94,18 @@ export default function Landing() {
       {/* HERO */}
       <section className="relative pt-16 overflow-hidden">
         <div className="relative h-[92vh] max-h-[820px] w-full">
-          <img src={HERO_IMG} alt="" className="absolute inset-0 w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/50" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            src={HERO_VIDEO_MP4}
+            poster={HERO_POSTER}
+            className="absolute inset-0 w-full h-full object-cover"
+            data-testid="hero-video"
+          />
+          <div className="absolute inset-0 bg-black/55" />
           <div className="absolute inset-0 noise" />
 
           <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center pt-10">
@@ -106,8 +119,8 @@ export default function Landing() {
                 <span className="text-primary">your terms.</span>
               </h1>
               <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-                Premium self-drive rentals across Delhi, Mumbai & Bangalore. Book in
-                60 seconds. Doorstep delivery. Zero paperwork.
+                Premium self-drive rentals in Asansol. Book in 60 seconds. Doorstep
+                delivery. Zero paperwork.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link to="/cars">
@@ -215,6 +228,52 @@ export default function Landing() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FOUNDER */}
+      <section id="founder" className="py-24 border-t border-white/10 bg-gradient-to-b from-transparent to-black/40">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
+          <div className="relative">
+            <div className="absolute -inset-3 border border-primary/40 -z-10" />
+            <img
+              src={FOUNDER_IMG}
+              alt="Ajit Arya — Founder, Arya Travels"
+              className="w-full aspect-[4/3] object-cover border border-white/10"
+              data-testid="founder-image"
+            />
+          </div>
+          <div>
+            <p className="overline text-primary">Meet the founder</p>
+            <h2 className="font-display font-black text-4xl sm:text-5xl tracking-tighter mt-3">
+              Built from the driver's seat,<br />
+              <span className="text-primary">by Ajit Arya.</span>
+            </h2>
+            <p className="text-muted-foreground mt-6 leading-relaxed">
+              Arya Travels started with two Maruti Ertigas and one promise — a rental
+              that treats you like a neighbour, not a transaction. Every car in our
+              fleet is personally inspected, insured, and delivered by our small team
+              right here in Asansol.
+            </p>
+            <p className="text-muted-foreground mt-4 leading-relaxed">
+              Whether it's a family weekend to Durgapur, a business trip to Kolkata,
+              or a monthly rental for that new job — we've got you.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">
+              <div>
+                <p className="overline text-muted-foreground">Founder</p>
+                <p className="font-display font-bold text-lg mt-1">Ajit Arya</p>
+              </div>
+              <div>
+                <p className="overline text-muted-foreground">Based in</p>
+                <p className="font-display font-bold text-lg mt-1">Asansol, WB</p>
+              </div>
+              <div>
+                <p className="overline text-muted-foreground">Since</p>
+                <p className="font-display font-bold text-lg mt-1">2022</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

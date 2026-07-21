@@ -13,14 +13,14 @@ import {
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 
-const CITIES = ["All", "Delhi", "Mumbai", "Bangalore"];
+const CITIES = ["All", "Asansol"];
 const CATEGORIES = ["all", "hatchback", "sedan", "suv", "muv", "luxury"];
 const TRANS = ["all", "manual", "automatic"];
 const FUELS = ["all", "petrol", "diesel", "electric", "hybrid"];
 
 export default function CarsList() {
   const [search] = useSearchParams();
-  const initialCity = search.get("city") || "All";
+  const initialCity = search.get("city") || "Asansol";
   const [cars, setCars] = useState([]);
   const [city, setCity] = useState(initialCity);
   const [category, setCategory] = useState("all");
