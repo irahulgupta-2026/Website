@@ -33,7 +33,7 @@ export default function Login() {
             Continue with Google
           </Button>
           <p className="text-xs text-muted-foreground mt-6 text-center">
-            By continuing you agree to RevvCars' Terms & Privacy.
+            By continuing you agree to Arya Travels' Terms & Privacy.
           </p>
         </div>
       </div>

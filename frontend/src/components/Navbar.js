@@ -29,7 +29,7 @@ export default function Navbar() {
             <CarFront className="w-4 h-4 text-white" />
           </div>
           <span className="font-display font-black text-lg tracking-tighter">
-            REVV<span className="text-primary">CARS</span>
+            ARYA <span className="text-primary">TRAVELS</span>
           </span>
         </Link>
 

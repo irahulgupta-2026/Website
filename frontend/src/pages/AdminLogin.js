@@ -10,7 +10,7 @@ import { ShieldCheck } from "lucide-react";
 
 export default function AdminLogin() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("admin@revvcars.com");
+  const [email, setEmail] = useState("admin@aryatravels.com");
   const [password, setPassword] = useState("");
   const [busy, setBusy] = useState(false);
 

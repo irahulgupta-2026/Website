@@ -11,12 +11,12 @@ export default function Footer() {
               <CarFront className="w-4 h-4 text-white" />
             </div>
             <span className="font-display font-black text-lg tracking-tighter">
-              REVV<span className="text-primary">CARS</span>
+              ARYA <span className="text-primary">TRAVELS</span>
             </span>
           </div>
           <p className="text-muted-foreground text-sm max-w-md leading-relaxed">
-            India's modern self-drive & chauffeur car rental. Zero paperwork, transparent
-            pricing, doorstep delivery in Delhi, Mumbai, and Bangalore.
+            Modern self-drive & chauffeur car rentals by Arya Travels. Zero paperwork,
+            transparent pricing, doorstep delivery in Delhi, Mumbai, and Bangalore.
           </p>
           <div className="flex items-center gap-3 mt-6">
             <a href="#" data-testid="social-ig" className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 lift"><Instagram className="w-4 h-4" /></a>
@@ -39,7 +39,7 @@ export default function Footer() {
           <p className="overline text-muted-foreground mb-4">Contact</p>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5" /> +91 98765 43210</li>
-            <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5" /> hello@revvcars.in</li>
+            <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5" /> hello@aryatravels.in</li>
             <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5" /> Delhi · Mumbai · Bangalore</li>
           </ul>
         </div>

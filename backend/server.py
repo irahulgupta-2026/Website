@@ -1,5 +1,5 @@
 """
-FastAPI server for RevvCars — car rental booking & lead-gen platform.
+FastAPI server for Arya Travels — car rental booking & lead-gen platform.
 """
 from fastapi import FastAPI, APIRouter, HTTPException, Depends, Request, Response, Cookie, Header
 from fastapi.responses import JSONResponse
@@ -29,15 +29,15 @@ mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
-app = FastAPI(title="RevvCars API")
+app = FastAPI(title="Arya Travels API")
 api = APIRouter(prefix="/api")
 
 ADMIN_EMAILS = [e.strip().lower() for e in os.environ.get("ADMIN_EMAILS", "").split(",") if e.strip()]
-ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "RevvAdmin@2026")
-ADMIN_JWT_SECRET = os.environ.get("ADMIN_JWT_SECRET", "revv-admin-secret-key-2026")
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "AryaAdmin@2026")
+ADMIN_JWT_SECRET = os.environ.get("ADMIN_JWT_SECRET", "arya-admin-secret-key-2026")
 STRIPE_API_KEY = os.environ.get("STRIPE_API_KEY", "sk_test_emergent")
 
-logger = logging.getLogger("revvcars")
+logger = logging.getLogger("aryatravels")
 logging.basicConfig(level=logging.INFO)
 
 
@@ -192,7 +192,7 @@ async def require_admin(x_admin_token: Optional[str] = Header(None)) -> dict:
 # ---------- Public routes ----------
 @api.get("/")
 async def root():
-    return {"message": "RevvCars API", "status": "ok"}
+    return {"message": "Arya Travels API", "status": "ok"}
 
 
 @api.get("/cars")

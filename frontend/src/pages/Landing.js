@@ -46,7 +46,7 @@ const WHY = [
 const TESTIMONIALS = [
   { name: "Aarav S.", city: "Delhi", stars: 5, body: "Booked a Creta for a Rajasthan road trip. Pickup was on time and the car was spotless. Will book again." },
   { name: "Priya M.", city: "Mumbai", stars: 5, body: "The self-drive Fortuner made our Lonavala weekend perfect. Insurance clarity was a big plus." },
-  { name: "Rohit K.", city: "Bangalore", stars: 5, body: "As a startup founder, I use RevvCars weekly. Instant checkout, doorstep delivery, no fuss." },
+  { name: "Rohit K.", city: "Bangalore", stars: 5, body: "As a startup founder, I use Arya Travels weekly. Instant checkout, doorstep delivery, no fuss." },
 ];
 
 const FAQS = [
@@ -172,12 +172,12 @@ export default function Landing() {
       <section id="why" className="py-24 border-t border-white/10 bg-gradient-to-b from-transparent to-black/60">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <p className="overline text-muted-foreground">Why RevvCars</p>
+            <p className="overline text-muted-foreground">Why Arya Travels</p>
             <h2 className="font-display font-black text-4xl sm:text-5xl tracking-tighter mt-2">
               Built for people who <span className="text-primary">actually drive.</span>
             </h2>
             <p className="text-muted-foreground mt-6 leading-relaxed">
-              We built RevvCars because renting a car in India shouldn't feel like a bank loan.
+              We built Arya Travels because renting a car in India shouldn't feel like a bank loan.
               Transparent, tech-first, human-supported.
             </p>
           </div>
